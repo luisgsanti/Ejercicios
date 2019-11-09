@@ -1,0 +1,23 @@
+<p>task-list works!</p>
+
+<div>
+    <h1 class="h2">List</h1>
+</div>
+
+<div>
+    <table border="1">
+        <tr>
+            <th>Titulo</th>
+            <th>Descripcion</th>
+            <th>Prioridades</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr *ngFor = "let task of tasks">
+            <td>{{task.title}}</td>
+            <td>{{task.description}}</td>
+            <td><samp *ngIf = "task.priority===true;"><b>Prioritario</b></samp> </td>
+        </tr>
+
+    </table>
+</div>
