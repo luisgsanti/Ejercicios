@@ -1,0 +1,31 @@
+<div>
+    <table border="1">
+        <tr>
+            <th>Campo</th>
+            <th>Indicaciones</th>
+        </tr>
+        <tr *ngFor = "let Datos of ListDatos">
+            <td>{{Datos.NumeroContrato}}</td>
+            <td>{{Datos.ValorContrato}}</td>
+            <td>{{Datos.ValorEstampilla}}</td>
+        </tr>
+
+    </table>
+
+    
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Campo</th>
+                <th scope="col">Indicaciones</th>
+            </tr>
+        </thead>
+        <tr *ngFor = "let Dato of ListDatos">
+            <td>{{Datos.NumeroContrato}}</td>
+            <td>{{Datos.ValorContrato}}</td>
+            <td>{{Datos.ValorEstampilla}}</td>
+        </tr>
+    </table>
+    
+</div>

@@ -1,0 +1,16 @@
+<br>
+<div class="container">
+    <div class="form-group">
+        <label>Ingrese Numero del contrato: </label>
+        <input [(ngModel)]="DatosLiquidacion.NumeroContrato" type="text" placeholder="numero de contrato"/>
+    </div>
+    
+    <div class="form-group">
+        <label>Ingrese valor de contrato: </label>
+        <input [(ngModel)]="datos.ValorContrato" placeholder="valor de contrato"/>
+    </div>
+
+    <div>
+        <button (click)='add()' class="btn btn-primary">Agregar</button>
+    </div>
+</div>
